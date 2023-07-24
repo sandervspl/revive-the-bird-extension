@@ -7,18 +7,22 @@ on:
 
 jobs:
   build:
-    name: Publish webextension
+    name: Publish Extension
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 12
-      - name: Install zip
+
+      - name: Zip extension files
         uses: montudor/action-zip@v1
+
       - name: Zip files
         run: zip -qq -r extension.zip contentScript.js favicon.png icon.png manifest.json
+
       - name: Upload & release
         uses: mnao305/chrome-extension-upload@v4.0.1
         with:
