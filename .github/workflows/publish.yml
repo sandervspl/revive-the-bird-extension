@@ -27,7 +27,7 @@ jobs:
         uses: mnao305/chrome-extension-upload@v4.0.1
         with:
           file-path: extension.zip
-          extension-id: hogefuga(extension id)
+          extension-id: hogefuga(lflnlpdbgadmglldnjiipneepfagajfh)
           client-id: ${{ secrets.CLIENT_ID }}
           client-secret: ${{ secrets.CLIENT_SECRET }}
           refresh-token: ${{ secrets.REFRESH_TOKEN }}
