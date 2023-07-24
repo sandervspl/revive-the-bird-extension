@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Revive The Bird",
+  "version": "1.0",
+  "description": "Revives the Twitter bird",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "https://*.twitter.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "favicon.png"
+  ]
+}
