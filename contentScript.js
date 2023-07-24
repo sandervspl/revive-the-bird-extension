@@ -33,7 +33,7 @@ const itvId = setInterval(() => {
   const topLeftIcon = document.querySelector('a[aria-label="Twitter"] svg');
 
   if (topLeftIcon) {
-    // append this vg to topLeftIcon
+    // append this svg to topLeftIcon
     appendSVGToElement(
       topLeftIcon.parentNode,
       iconSvg(topLeftIcon.classList.value)
