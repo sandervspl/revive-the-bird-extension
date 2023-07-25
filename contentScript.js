@@ -27,7 +27,6 @@ function appendSVGToElement(element, svgString) {
 }
 
 function changeIcons() {
-  console.log(1);
   const topLeftIcon = document.querySelector('a[aria-label="Twitter"] svg');
 
   if (topLeftIcon) {
