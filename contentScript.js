@@ -78,3 +78,13 @@ darkModePreference.addEventListener("change", (e) => {
     navbarIcon.style.fill = isDarkmode ? "white" : "TWITTER_BLUE_RGB";
   }
 });
+
+// inject style
+const style = document.createElement("style");
+style.textContent = `
+  a[aria-label="Twitter"] svg g,
+  div[aria-label="Loading…"] svg g {
+    display: none;
+  }
+`;
+document.head.appendChild(style);
